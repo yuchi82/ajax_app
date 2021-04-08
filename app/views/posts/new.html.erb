@@ -1,6 +1,62 @@
-<h1>新規投稿ページ</h1>
+<div class="wrapper">
 
-<%= form_with url: "/posts", method: :post, local: true do |form| %>
-  <%= form.text_field :content %>
-  <%= form.submit '投稿する' %>
-<% end %>
+    <!-- header -->
+    <header class="header ">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href=".">YUICHIRO　PORTFOLIO</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="#works">WORKS</a></li>
+            <li class="header-nav-item"><a href="#skill">SKILL</a></li>
+            <li class="header-nav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <!-- split -->
+      <div class="split">
+        <div class="split-body">
+          <p class="split-title">YUICHIRO<br>WATANABE</p>
+          <p class="split-text">
+            ユーザーとお客様が心から満足できるサイトをお作りいたします。<br>
+            山形県山形市在住。<br>
+            ４年間生保事務業務に従事、現職。副業ライター。
+          </p>
+        </div>
+        <div class="split-img"></div>
+      </div>
+      <!-- /split -->
+
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="inner">
+          <h2 class="title">CONTACT</h2>
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
+          </p>
+          <div class="contact-list">
+            <a class="contact-item" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+            <a class="contact-item" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <span class="contact-item">xxxxxx@gmail.com</span>
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;YUICHIRO WATANABE</div>
+    </footer>
+    <!-- /footer -->
+

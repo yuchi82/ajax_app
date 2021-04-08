@@ -4,6 +4,10 @@ class PostsController < ApplicationController
     @posts = Post.all.order(id: "DESC")
   end
 
+  def new
+    @post = Post.new
+  end
+
   def create
     post = Post.create(content: params[:content], checked: false)
     render json:{ post: post }
