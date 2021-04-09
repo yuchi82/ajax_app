@@ -8,8 +8,8 @@
         </h1>
         <nav class="header-nav">
           <ul class="header-nav-list">
-            <li class="header-nav-item"><a href="#works">WORKS</a></li>
-            <li class="header-nav-item"><a href="#skill">SKILL</a></li>
+            <li class="header-nav-item"><a href="#works">Design</a></li>
+            <li class="header-nav-item"><a href="#skill">APP</a></li>
             <li class="header-nav-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
@@ -39,9 +39,9 @@
           <h2 class="title">Design</h2>
           <div class="works-list">
             <div class="works-item">
-              <%= link_to image_tag("logo.png", class:"google-btn"), "#" %>
-              <p class="works-name">time-lock　logo</p>
-              <p class="works-info">Design / Coding(Responsive)</p>
+              <%= link_to image_tag("logo.png", class:"google-btn"), new_post_path %>
+              <p class="works-name">time-lock　banner</p>
+              <p class="works-info">Design / banner</p>
             </div>
             <div class="works-item">
               <%= image_tag "ogp.png", class:"list-pict" %>
@@ -49,9 +49,14 @@
               <p class="works-info">Design / banner</p>
             </div>
             <div class="works-item">
+              <%= image_tag "time-lock3.png", class:"list-pict" %>
+              <p class="works-name">time-lock　logo</p>
+              <p class="works-info">Design / logo</p>
+            </div>
+            <div class="works-item">
               <%= image_tag "logo2.jpg", class:"list-pict" %>
-              <p class="works-name">Art-Design</p>
-              <p class="works-info">Design / Art</p>
+              <p class="works-name">Art</p>
+              <p class="works-info">Design / grid Design</p>
             </div>
           </div>
         </div>
@@ -64,19 +69,17 @@
           <h2 class="title">APP</h2>
           <div class="skill-list">
             <div class="skill-item">
-              <%= link_to image_tag("logo.png", class:"google-btn"), "#" %>
+              <%= link_to image_tag("time-lock3.png", class:"google-btn"), new_post_path %>
               <div class="skill-body">
-                <h3 class="skill-name">HTML5/CSS3</h3>
+                <h3 class="skill-name">ポモドーロタイマーアプリ</h3>
                 <p class="skill-text"></p>
               </div>
             </div>
-            
             <div class="skill-item">
-              <p class="skill-img"><%= image_tag "icon_skill.png", class:"list-pict" %></p>
+              <%= link_to image_tag("furima-logo-color.png", class:"google-btn"), "#" %>
               <div class="skill-body">
-                <h3 class="skill-name">XD</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+                <h3 class="skill-name">furimaアプリ</h3>
+                <p class="skill-text"></p>
               </div>
             </div>
           </div>
@@ -88,20 +91,15 @@
       <section class="contact section" id="contact">
         <div class="inner">
           <h2 class="title">CONTACT</h2>
-          <p class="lead">
-            お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
-          </p>
           <div class="contact-list">
-            <a class="contact-item" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
-            <a class="contact-item" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-            <span class="contact-item">xxxxxx@gmail.com</span>
-          </div>
-        </div>
+          <a href="https://twitter.com/https:/yvichrou211" class="btn-social-icon-twitter"><span class="btn-social-icon-twitter__square"><i class="fa fa-twitter"></i></span></a> 
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">SNSにてお願いいたします。
+          </p>
+        </div> 
       </section>
       <!-- /contact -->
-      <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined">expand_less</span>
-      </div>
+      
     </main>
 
     <!-- footer -->
