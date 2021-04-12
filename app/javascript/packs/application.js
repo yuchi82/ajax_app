@@ -4,11 +4,41 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-require("turbolinks").start()
+// require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("../checked")
+require("../script")
 require("../memo")
+
+$(function () {
+  //ページ内スクロール
+  var nav = $(".header");
+  $('a[href^="#"]').on("click", function () {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? "html" : href);
+    var position = target.offset().top;
+    $("html, body").animate(
+      {
+        scrollTop: position,
+      },
+      300,
+      "swing"
+    );
+    return false;
+  });
+
+  //ページトップ
+  $("#js-page-top").on("click", function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      300
+    );
+    return false;
+  });
+  
+});
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
