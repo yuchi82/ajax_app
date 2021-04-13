@@ -65,7 +65,7 @@ li {
   position: fixed;
   top: 0;
   z-index: 1;
-  width: 100%;
+  width: 100%; 
 }
 
 .header-inner {
@@ -183,24 +183,32 @@ li {
 
 .app {
   padding: 50px 0;
-  display: flex;
+  margin: 0 5rem;
 }
 
-.app-title {
-  font-size: 24px;
-  margin-bottom: 20px;
+.app-image1 {
   text-align: center;
-  color: #737d6d;
 }
 
 .app-text {
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
+  font-size: 12px;
+  display:inline-block;
+  padding: 0 2rem;
 }
 
 .app-inner {
-  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.app-img1, .app-img2 {
+  border-radius: 6px;
+  max-height: 30%; 
 }
 
 /*--------------------------------
